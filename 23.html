@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script type="text/babel">
+        var jsxh1=<div>
+            <input type="checkbox" name="courses" value="react" onChange={(event)=>{abc(event)}}/>ReactJS<br/>
+            <input type="checkbox" name="courses" value="angular" onChange={(event)=>{abc(event)}}/>Angular<br/>
+            <input type="checkbox" name="courses" value="nodejs" onChange={(event)=>{abc(event)}}/>NodeJS<br/>
+            <input type="checkbox" name="courses" value="express" onChange={(event)=>{abc(event)}}/>Express<br/>
+            <input type="checkbox" name="courses" value="mongodb" onChange={(event)=>{abc(event)}}/>MongoDB<br/>
+            <input type="checkbox" name="courses" value="mongoose" onChange={(event)=>{abc(event)}}/>Mongoose<br/>
+            <input type="checkbox" name="courses" value="mysql" onChange={(event)=>{abc(event)}}/>MySQL
+            <h1 id="d2"></h1>
+            </div>
+        function abc(e){
+           d2.innerText=e.target.value; 
+        }
+        ReactDOM.render(jsxh1,document.getElementById("d1"));
+        
+    </script> 
+</body>
+</html>

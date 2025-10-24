@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+</head>
+<body>
+    <div id="d1"></div>
+    <script type="text/babel">
+        var jsxh1=<div>
+            <button id="d2" onClick={(event)=>{abc(event)}}>Button-1</button>
+            <button id="d3" onClick={(event)=>{def(event)}}>Button-2</button>
+            <button id="d3" onClick={(event)=>{pqr(event)}}>Button-3</button>
+            <button id="d5" onClick={(event)=>{xyz(event)}}>Button-4</button>
+            <h1 id="d6"></h1>
+            </div>
+        function abc(e){
+            var value=d2.value;
+            d2.value=1;
+            d6.innerText=d2.value;
+        }
+
+        function def(e){
+            var value=d3.value;
+            d3.value=10;
+            d6.innerText=d3.value;
+        }
+
+        function pqr(e){
+            var value=d4.value;
+            d4.value=200;
+            d6.innerText=d4.value;
+        }
+
+        function xyz(e){
+            var value=d5.value;
+            d5.value=999;
+            d6.innerText=d5.value;
+        }
+
+
+        ReactDOM.render(jsxh1,document.getElementById("d1"));
+        
+    </script> 
+</body>
+</html>
